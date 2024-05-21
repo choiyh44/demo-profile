@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo-profile
+  profiles:
+    active: local
+    include: custom
+
+  config:
+    import:
+      - import-${spring.profiles.active}.yml

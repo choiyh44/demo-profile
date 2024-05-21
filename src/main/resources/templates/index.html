@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    안녕하세요. 정상 접속되었습니다.
+    <p>
+        spring.application.name: <span th:text="${@environment.getProperty('spring.application.name')}"></span><br/>
+        property.import: <span th:text="${@environment.getProperty('property.import')}"></span><br/>
+        property.custom: <span th:text="${@environment.getProperty('property.custom')}"></span><br/>
+    </p>
+</body>
+</html>
