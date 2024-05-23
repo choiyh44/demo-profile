@@ -3,7 +3,9 @@ spring:
     name: demo-profile
   profiles:
     active: local
-    include: custom
+    include:
+    - custom
+    - test-dummy
 
   config:
     import:
